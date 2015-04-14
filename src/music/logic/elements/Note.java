@@ -48,7 +48,7 @@ public class Note implements Comparable {
 	}
 
 	public void setPitchValue(char note, int octave) {
-		this.pitchValue = note * Note.noteSymbolToNoteValue.get(note);
+		this.pitchValue = octave * Note.noteSymbolToNoteValue.get(note);
 	}
 	
 	public int getOctave()
